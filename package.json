@@ -1,0 +1,25 @@
+{
+  "name": "attendance-tracker",
+  "version": "1.0.0",
+  "description": "Google Meet Attendance Tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "googleapis": "^92.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "concurrently": "^6.4.0"
+  }
+} 
